@@ -24,7 +24,7 @@
           }, []);
 
           useEffect(() => {
-            const socketInstance = io("http://localhost:3000");
+            const socketInstance = io("https://check-off-server.rushabh-patil.co");
             setSocket(socketInstance);
 
             const getShuffledIndices = (): number[] => {
