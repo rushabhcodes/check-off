@@ -24,7 +24,7 @@
           }, []);
 
           useEffect(() => {
-            const socketInstance = io("http://13.60.211.166:3000/");
+            const socketInstance = io("ws://13.60.211.166:3000/");
             setSocket(socketInstance);
               
             const getShuffledIndices = (): number[] => {
