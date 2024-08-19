@@ -24,9 +24,9 @@
           }, []);
 
           useEffect(() => {
-            const socketInstance = io("https://check-off-server.rushabh-patil.co");
+            const socketInstance = io("http://13.60.211.166:3000/");
             setSocket(socketInstance);
-
+              
             const getShuffledIndices = (): number[] => {
               const indices = Array.from({ length: numberOfCheckboxes }, (_, i) => i);
               for (let i = indices.length - 1; i > 0; i--) {
